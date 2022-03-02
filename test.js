@@ -1,13 +1,33 @@
-let dataList = { date: '', name: [] };
-let nameList = ['1', '2', '3', '4', '5'];
-let index = nameList.indexOf('1'); // 0
-// 跑4天
-for(let i = 0; i <= 3; i++) {
-    dataList.date = i;
-    // 這個for永遠只會跑 0, 1 這兩個index
-    for(let j = index; j <= index+1; j++) {
-        dataList.name.push(nameList[j % 4]);
-        // index += 1;
-    }
-    console.log(dataList);
-}
+// let arr = [80, 50, 10, 20, 5];
+// let arr2 = ['Fei', 'Bai', 'Han', 'Chu', 'Bubu'] ;
+
+// forEach不會產生新陣列，如果賦值也會undefined
+// arr.forEach((item, idx) => {
+//   if(item == 80) return
+//   console.log(item);
+// });
+
+// map會產生新陣列，並可賦值到新變數
+// newArr = arr.map((item, idx) => {
+//   return item * item;
+// });
+
+// arr.splice(0, 1, 1314);
+
+// newArr = arr.filter(item => item <= 10);
+
+// for (let value of arr2) {
+//   value += ' <3' ;
+//   console.log(value);
+// }
+let num = 5
+// newmun = num % 5 // 取餘數
+newnum = num % 1
+
+// for(let i = 1; i <= 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 1000 * i)
+// }
+
+console.log(newnum);
