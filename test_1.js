@@ -21,3 +21,4 @@ arr.forEach((e) => {
 })
 
 console.log(sec);
+console.log(456);
